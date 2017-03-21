@@ -2,7 +2,10 @@
   "name": "tic-tac-toe-game",
   "version": "1.0.0",
   "scripts": {
-    "start": "webpack-dev-server --hot",
+    "board-size": "node ./rules/index.js",
+    "start": "set BOARD_SIZE=25&& npm run board-size && npm run raw-start",
+    "start-unix": "BOARD_SIZE=25 npm run board-size && npm run raw-start",
+    "raw-start": "webpack-dev-server --hot",
     "build": "webpack"
   },
   "author": "YK",
