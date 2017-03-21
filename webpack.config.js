@@ -1,6 +1,6 @@
 module.exports = {
 	/* main app file */
-	entry: './src/App.jsx',
+	entry: './src/index.jsx',
 	/* bundle file path */
 	output: {
 		filename: 'bundle.js',
