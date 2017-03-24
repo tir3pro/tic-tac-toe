@@ -3,7 +3,7 @@ import React from 'react';
 import Square from './Square';
 import BoardRow from './BoardRow';
 import calculateWinner from '../helpers/calculateWinner';
-import { BOARD_SIZE, LINE_LENGTH, winLines } from '../../rules/rules.json';
+import { BOARD_SIZE, LINE_LENGTH } from '../../rules/rules.json';
 
 class Board extends React.Component {
 	constructor() {
@@ -20,11 +20,13 @@ class Board extends React.Component {
 	}
 	handleClick(i, row) {
 		const squares = this.state.squares.slice();
-		let stepNum = this.state.stepNum += 1;
-		
+		let stepNum;
+
 		if (calculateWinner(this.state.squares) || squares[i]) {
 			return;
 		}
+		
+		stepNum = this.state.stepNum += 1;
 
 		squares[i] = this.state.xIsNext ? 'X' : 'O';
 		

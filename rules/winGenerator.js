@@ -1,4 +1,5 @@
 module.exports = function buildBoard(boardSize) {
+	'use strict';
 	const lines = [];
 	let step = Math.sqrt(boardSize);
 	let lastSquareIndexInRow = step;
