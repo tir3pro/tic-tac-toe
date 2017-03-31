@@ -13,4 +13,5 @@ When you open a project, you will see three folders: **public, rules and src**
 	- **helpers** folder: calculateWinner.js file with a function which checks whether somebody wins or not;
 	- **index.jsx** – file which renders the App into the DOM.
 	- **styles.scss** – the App styles
+	
 Files **package.json** and **webpack.config.js** are the files with info, dependencies and settings needed for the project.
