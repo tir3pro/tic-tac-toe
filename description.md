@@ -3,7 +3,7 @@ The application is coded on React, ES6 and uses a webpack as a task-manager. In 
 I use React because when I started doing the task, I’d just completed the React course, so it was a great chance to check knowledge I got. It seems that I know this library better than others now. In fact, the app is just a view which renders different states.
 
 When you open a project, you will see three folders: **public, rules and src**
-- **public** folder: folder for the client with **index.html** file where React puts the App;
+- **public** folder: folder for the client with **index.html** file where React puts the App into;
 - **rules** folder:	
 	- **index.js** file uses a node.js method to create **rules.json** file before running the App to know the board size and winner lines;
 	- **winGenerator.js** – function which generates all possible winner lines;
